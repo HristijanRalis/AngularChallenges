@@ -1,8 +1,8 @@
 <header
   class="w-full h-[400px] relative bg-[url('/banner-1.png')] bg-cover bg-center inset-0 bg-black/50"
 >
-  <div class="container mx-auto py-4 ">
-    <nav class="flex items-center py-4">
+  <div class="container mx-auto py-4">
+    <nav class="flex items-center py-4 border-b-2 border-solid border-white justify-between">
       <div class="LOGO items-center flex">
         <img src="logo.png" alt="logo" />
       </div>
@@ -15,7 +15,26 @@
         <li class="list-item text-white text-xl">contact</li>
         <li class="list-item text-white text-xl">blog</li>
       </ul>
+
+      <div class="social-links">
+        <ul class="social-list flex items-center gap-6 mx-4">
+          <li class="social-item">
+            <fa-icon [icon]="faFacebook" class="text-white text-2xl"></fa-icon>
+          </li>
+          <li class="social-item">
+            <fa-icon [icon]="faTwitter" class="text-white text-2xl"></fa-icon>
+          </li>
+          <li class="social-item">
+            <fa-icon [icon]="faInstagram" class="text-white text-2xl"></fa-icon>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <div class="INTRO"></div>
+    <div class="INTRO flex flex-col items-center justify-center h-[300px] text-center">
+      <h1 class="w-90 text-white capitalize text-3xl font-bold">
+        fitness & aquatic center swim club and lessons
+      </h1>
+      <p class="text-white capitalize">Sponsored by Gecko</p>
+    </div>
   </div>
 </header>
