@@ -1,27 +1,51 @@
 <footer class="w-full bg-[var(--regal-blue)]">
-  <div class="container mx-auto py-4 flex justify-between">
-    <div id="contact">
-      <div class="contact-info">
-        <h3 class="text-white font-bold uppercase">contact info</h3>
-      </div>
-      <h3 class="text-white font-bold uppercase">phone info</h3>
-      <div class="phone"></div>
-    </div>
+  <div class="container mx-auto py-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
 
-    <div class="contact">
-      <div class="club-open">
-        <h3 class="text-white font-bold uppercase">club hours</h3>
+      <div class="lg:col-span-3 p-5">
+        <div class="contact-info">
+          <h3 class="text-white font-bold uppercase">contact info</h3>
+          <address>Downtown 2. Bitola. Ulica Filip Vtori Makedonski 90</address>
+        </div>
+        
+        <div class="phone">
+          <h3 class="text-white font-bold uppercase">phone info</h3>
+          <p>Phone (+389) 75 812 679</p>
+          <a href="mailto: hristijan.ralevski@hotmail.com">hristijan.ralevski@hotmail.com</a>
+        </div>
       </div>
-    </div>
-    <div class="contact">
-      <h3 class="text-white font-bold uppercase">popular news</h3>
-      <div class="popular-news"></div>
-    </div>
-    <div class="contact">
-      <h3 class="text-white font-bold uppercase">search</h3>
-      <div class="search"></div>
-      <h3 class="text-white font-bold uppercase">tag cloud</h3>
-      <div class="tags"></div>
+      
+      <div class="lg:col-span-3  p-5">
+        <div class="club-open">
+          <h3 class="text-white font-bold uppercase">club hours</h3>
+          <p>Monday: 8AM - 10PM</p>
+          <p>Tuesday: 8AM - 10PM</p>
+          <p>Wednesday: 8AM - 10PM</p>
+          <p>Thursday: 8AM - 10PM</p>
+          <p>Friday: 8AM - 10PM</p>
+          <p>Saturday: 14AM - 10PM</p>
+        </div>
+      </div>
+      <div class="lg:col-span-3 p-5">
+        <div class="popular-news">
+          <h3 class="text-white font-bold uppercase">popular news</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, praesentium.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, praesentium.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, praesentium.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, praesentium.</p>
+        </div>
+      </div>
+      <div class="lg:col-span-3  p-5">
+        <div class="search"><h3 class="text-white font-bold uppercase">search</h3></div>
+        
+        <div class="tags flex flex-col">
+          <h3 class="text-white font-bold uppercase">tag cloud</h3>
+          
+          <div class="tags-container">
+            <app-sport-tag class="" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </footer>

@@ -11,6 +11,15 @@ body {
   padding: 0;
 }
 
+img{
+  width: 100%;
+  height: auto;
+}
+
+p,a {
+  overflow: hidden;
+}
+
 img,
 h1,
 h2,
