@@ -1,0 +1,24 @@
+<div class="trendingCollage flex flex-col gap-3">
+  <div class="trendingContent flex gap-3 order-2 lg:order-1">
+    <div class="trendingImage relative flex-1 h-64 overflow-hidden">
+      <img [src]="imageSrc1" alt="image" class="w-full h-full object-cover" />
+      <p class="absolute bottom-0 left-0 w-full text-white bg-transparent p-4">
+        {{ description1 }}
+      </p>
+    </div>
+    <div class="trendingImage relative flex-1 h-64 overflow-hidden">
+      <img [src]="imageSrc2" alt="image" class="w-full h-full object-cover" />
+      <p class="absolute bottom-0 left-0 w-full text-white bg-transparent p-4">
+        {{ description2 }}
+      </p>
+    </div>
+  </div>
+  <div class="trendingFooter relative order-1 lg:oreder-2 h-64 overflow-hidden">
+    <div class="trendingImageFooter">
+      <img [src]="imageSrc3" alt="image" class="w-full h-full object-cover" />
+      <p class="absolute bottom-0 left-0 w-full text-white bg-transparent p-4">
+        {{ description3 }}
+      </p>
+    </div>
+  </div>
+</div>
