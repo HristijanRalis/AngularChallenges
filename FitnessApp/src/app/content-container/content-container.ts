@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { RelatedContent } from "./related-content/related-content";
+import { Card } from "../card/card";
 
 @Component({
   selector: 'app-content-container',
-  imports: [RelatedContent],
+  standalone: true,
+  imports: [RelatedContent, Card],
   templateUrl: './content-container.html',
   styleUrl: './content-container.css',
 })

@@ -2,17 +2,43 @@
   <div class="container mx-auto py-4">
     <!-- POPULAR-NEWS-START  -->
 
-    <div class="popular-news"></div>
+    <div class="popular-news p-4">
+      <h2 class="text-3xl font-bold uppercase">Popular News</h2>
+
+      <div class="popular-content flex flex-col md:flex-row gap-3">
+        <app-card
+          imageSrc="blog-1.jpg"
+          title="nations League offers new hope to cayman islands "
+          subTitle="sport"
+          description="Lorem ipsum dolor sit amet, consectetur adipisicing."
+        />
+        <app-card
+          imageSrc="blog-2.jpg"
+          title="nations League offers new hope to cayman islands "
+          subTitle="cars"
+          description="Lorem ipsum dolor sit amet, consectetur adipisicing."
+        />
+        <app-card
+          imageSrc="blog-3.jpg"
+          title="nations League offers new hope to cayman islands "
+          subTitle="everything"
+          description="Lorem ipsum dolor sit amet, consectetur adipisicing."
+        />
+      </div>
+    </div>
     <!-- POPULAR-NEWS-END  -->
 
     <!-- TRENDING-MONTH-START  -->
 
-    <div class="trending-month"></div>
+    <div class="trending-month p-4">
+      <h2 class="text-3xl font-bold uppercase">Trending this month</h2>
+    </div>
     <!-- TRENDING-MONTH-END  -->
 
     <!-- RELATED-NEWS-START  -->
 
     <div class="related-news flex flex-col gap-3 p-4">
+      <h2 class="text-3xl font-bold uppercase">Related News</h2>
       <!-- RELATED-CONTENT-START  -->
       <app-related-content
         imageSrc="blog-1.jpg"

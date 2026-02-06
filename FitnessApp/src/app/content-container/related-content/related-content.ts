@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-related-content',
+  standalone: true,
   imports: [],
   templateUrl: './related-content.html',
   styleUrl: './related-content.css',
