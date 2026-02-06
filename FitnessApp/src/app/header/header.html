@@ -2,14 +2,14 @@
   class="w-full min-h-[400px] relative bg-[url('/banner-1.png')] bg-cover bg-center inset-0 bg-black/50"
 >
   <div class="container mx-auto py-4">
-    <nav
-      class="flex flex-col lg:flex-row items-center py-4 border-b-2 border-solid border-white justify-between"
-    >
+    <nav class="flex items-center py-4 border-b-2 border-solid border-white justify-between">
       <div class="LOGO items-center flex">
         <img src="logo.png" alt="logo" />
       </div>
 
-      <ul class="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
+      <!-- DEKSTOP MENU -->
+
+      <ul class="hidden lg:flex items-center gap-4">
         <li class="list-item text-white text-xl">home</li>
         <li class="list-item text-white text-xl">sports</li>
         <li class="list-item text-white text-xl">racing</li>
@@ -18,8 +18,9 @@
         <li class="list-item text-white text-xl">blog</li>
       </ul>
 
+      <!-- DEKSTOP LIST -->
       <div class="social-links">
-        <ul class="social-list flex items-center gap-6 mx-4">
+        <ul class="hidden lg:flex social-list flex items-center gap-6 mx-4">
           <li class="social-item">
             <fa-icon [icon]="faFacebook" class="text-white text-2xl"></fa-icon>
           </li>
@@ -32,10 +33,24 @@
         </ul>
       </div>
 
-      <div class="hamburger">
-        <app-hamburger-menu />
-      </div>
+      <!-- HAMBURGER BUTTON -->
+
+      <button
+        class="lg:hidden text-2xl text-white cursor-pointer"
+        (click)="toggleMenu()"
+        aria-label="Toggle hamburger menu"
+      >
+        <fa-icon [icon]="menuOpen ? faXmark : faBars" />
+      </button>
     </nav>
+
+    <!-- HAMBURGER MENU-->
+    @if (menuOpen) {
+      <app-hamburger-menu class="lg:hidden w-full z-50" />
+    }
+
+    <!-- HEADER INTRO-->
+
     <div class="INTRO flex flex-col items-center justify-center h-[300px] text-center">
       <h1 class="w-90 text-white capitalize text-3xl font-bold">
         fitness & aquatic center swim club and lessons

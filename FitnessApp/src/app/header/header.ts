@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { HamburgerMenu } from '../hamburger-menu/hamburger-menu';
+
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -13,4 +15,13 @@ export class Header {
   faFacebook = faFacebook;
   faTwitter = faTwitter;
   faInstagram = faInstagram;
+
+  faBars = faBars;
+  faXmark = faXmark;
+
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 }
