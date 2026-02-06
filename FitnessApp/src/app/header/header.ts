@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { HamburgerMenu } from '../hamburger-menu/hamburger-menu';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule, HamburgerMenu],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
