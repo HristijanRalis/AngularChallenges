@@ -2,3 +2,8 @@
 :root {
   --regal-blue: rgb(53, 58, 64);
 }
+
+body {
+  background-color: white;
+  color: black;
+}
