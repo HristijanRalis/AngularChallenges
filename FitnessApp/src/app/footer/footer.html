@@ -1,23 +1,22 @@
 <footer class="w-full bg-[var(--regal-blue)]">
   <div class="container mx-auto py-4">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
-
       <div class="lg:col-span-3 p-5">
-        <div class="contact-info">
-          <h3 class="text-white font-bold uppercase">contact info</h3>
+        <div class="contact-info my-5">
+          <h3 class="text-white font-bold uppercase text-3xl">contact info</h3>
           <address>Downtown 2. Bitola. Ulica Filip Vtori Makedonski 90</address>
         </div>
-        
-        <div class="phone">
-          <h3 class="text-white font-bold uppercase">phone info</h3>
+
+        <div class="phone my-5">
+          <h3 class="text-white font-bold uppercase text-3xl">phone info</h3>
           <p>Phone (+389) 75 812 679</p>
           <a href="mailto: hristijan.ralevski@hotmail.com">hristijan.ralevski@hotmail.com</a>
         </div>
       </div>
-      
-      <div class="lg:col-span-3  p-5">
+
+      <div class="lg:col-span-3 p-5">
         <div class="club-open">
-          <h3 class="text-white font-bold uppercase">club hours</h3>
+          <h3 class="text-white font-bold uppercase text-3xl">club hours</h3>
           <p>Monday: 8AM - 10PM</p>
           <p>Tuesday: 8AM - 10PM</p>
           <p>Wednesday: 8AM - 10PM</p>
@@ -28,21 +27,32 @@
       </div>
       <div class="lg:col-span-3 p-5">
         <div class="popular-news">
-          <h3 class="text-white font-bold uppercase">popular news</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, praesentium.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, praesentium.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, praesentium.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, praesentium.</p>
+          <h3 class="text-white font-bold uppercase text-3xl">popular news</h3>
+          <p class="border-b-2 border-solid border-white mt-2 py-2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, praesentium.
+          </p>
+          <p class="border-b-2 border-solid border-white mt-2 py-2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, praesentium.
+          </p>
+          <p class="border-b-2 border-solid border-white mt-2 py-2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, praesentium.
+          </p>
+          <p class="border-b-2 border-solid border-white mt-2 py-2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, praesentium.
+          </p>
         </div>
       </div>
-      <div class="lg:col-span-3  p-5">
-        <div class="search"><h3 class="text-white font-bold uppercase">search</h3></div>
-        
+      <div class="lg:col-span-3 p-5">
+        <div class="search py-2">
+          <h3 class="text-white font-bold uppercase text-3xl">search</h3>
+          <app-search-group />
+        </div>
+
         <div class="tags flex flex-col">
-          <h3 class="text-white font-bold uppercase">tag cloud</h3>
-          
+          <h3 class="text-white font-bold uppercase text-3xl">tag cloud</h3>
+
           <div class="tags-container">
-            <app-sport-tag class="" />
+            <app-sport-tag />
           </div>
         </div>
       </div>
